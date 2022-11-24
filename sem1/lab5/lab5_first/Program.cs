@@ -7,13 +7,8 @@ namespace lab5_first
     {
         static int factorial(int num) {
             int n = 1;
-            for (int i = 0; i <= num; i++ ) {
-                if (i == 0) {
-                    n *= 1;
-                }
-                else {
-                    n *= i;
-                }
+            for (int i = 1; i <= num; i++) {
+                n *= i;
             }
             return n;
         }
