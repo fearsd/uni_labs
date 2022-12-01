@@ -107,12 +107,12 @@ namespace lab5_third
             na = int.Parse(Console.ReadLine());
 
             int[,] A = new int[na, na];
-            
+
             A = FullMatrix(A, na, na);
 
             Console.WriteLine("Матрица А");
             PrintMatrix(A, na, na);
-            
+
             Console.Write("Сумма квадратов нижнего треугольника: ");
             Console.WriteLine(SumOfSquares(DownTriangleElems, A));
             Console.Write("Сумма квадратов верхнего треугольника: ");

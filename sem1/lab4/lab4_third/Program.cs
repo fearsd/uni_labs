@@ -165,7 +165,7 @@ namespace lab4_first
             int rowIndex_arr = 0;
             List<ExtremumElement> minimums = new List<ExtremumElement>();
             List<ExtremumElement> minimums_arr = new List<ExtremumElement>();
-            
+
             // заполнение рандомными значениями
             A = FullMatrix(A, ii, jj);
             A_arr = FullArrayAsMatrix(A_arr, ii, jj);
@@ -185,7 +185,7 @@ namespace lab4_first
             // сортируем элементы списка по minValue по убыванию
             List<ExtremumElement> sortedMinimums = minimums.OrderBy(e => e.Value).ToList();
             sortedMinimums.Reverse();
-            
+
             // получаем список {rowIndex; minValue} для массива
             for (int i = 0; i < ii; i++) {
                 int[] rows = GetRowByIndexInArray(A_arr, i, jj);
@@ -204,7 +204,7 @@ namespace lab4_first
                     sortedMatrix[rowIndex, i] = A[elem.RowIndex, i];
                 rowIndex++;
             }
-            
+
             // создаем новую матрицу
             int[] sortedArrayAsMatrix = new int[ii*jj];
             foreach (ExtremumElement elem in sortedMinimums_arr) {
