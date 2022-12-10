@@ -44,12 +44,12 @@ namespace lab5_third
             return sum;
         }
 
-        static int AlgebraicProgressionSum(int a, int d, int n) {
-            return (2 * a + d * (n - 1)) / 2 * n;
+        static int AlgebraicProgressionSum(double a, double d, double n) {
+            return (int)((2 * a + d * (n - 1)) / 2 * n);
         }
 
         static int[] DownTriangleElems(int[,] mat, int n) {
-            int[] elems = new int[AlgebraicProgressionSum(1, 1, n)+1];
+            int[] elems = new int[AlgebraicProgressionSum(1, 1, n)];
             int m = 0;
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < i + 1; j++) {
