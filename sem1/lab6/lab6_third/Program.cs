@@ -31,7 +31,7 @@ namespace lab6_third
         public int scoredGoals = 0;
         public int missedGoals = 0;
         public int numMatches = 1;
-        public int diff; // scoredGoals - missedGoals
+        public int diff;
         public Team(string name, int scoredGoals, int missedGoals, int score) {
             this.name = name;
             this.score = score;
@@ -115,7 +115,7 @@ namespace lab6_third
 
         }
 
-        
+
         static void countMatch(Match match, List<Team> teams, bool isGuest=false) {
             string teamName = !isGuest ? match.team1 : match.team2;
             if (isGuest) {

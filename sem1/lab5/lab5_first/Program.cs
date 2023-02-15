@@ -54,9 +54,17 @@ namespace lab5_first
 
             Console.WriteLine("задача 2:");
             int a = 3, b = 4, c = 5;
+            int m = 5, b2 = 6, c2 = 7;
             double _p = p(a, b, c);
+            double _p2 = p(m, b2, c2);
             double _S = Geron(_p, a, b, c);
-            Console.WriteLine(_S);
+            double _S2 = Geron(_p2, m, b2, c2);
+            if (_S > _S2) {
+                Console.WriteLine("Первый треугольник больше");
+            }
+            else {
+                Console.WriteLine("Второй треугольник больше");
+            }
             Console.WriteLine();
 
             Console.WriteLine("задача 3a:");
