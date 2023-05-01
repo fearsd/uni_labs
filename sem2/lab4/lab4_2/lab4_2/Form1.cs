@@ -52,11 +52,18 @@ namespace lab4_2
             if (TimerInput.Text != "")
             {
                 timer.Stop();
+                timer.Dispose();
+                timer = new System.Timers.Timer();
                 timer.Interval = int.Parse(TimerInput.Text) * 1000;
                 timer.Elapsed += (sender, e) => BuildGraphics();
                 timer.Start();
             }
-            else timer.Stop();
+            else { 
+                timer.Stop();
+                timer.Dispose();
+                timer = new System.Timers.Timer();
+            }
+
         }
     }
 }

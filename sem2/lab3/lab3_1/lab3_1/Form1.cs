@@ -46,7 +46,11 @@ namespace lab3_1
             int i = (e.Y - playground_y0) / cell_size;
             int j = (e.X - playground_x0) / cell_size;
 
-            if ((e.X < playground_x0 || e.X > playground_x0 + playground_width) || (e.Y < playground_y0 || e.Y > playground_y0 + playground_width) || game.field[i, j] != 0 || game.winned)
+            if ((e.X < playground_x0 || e.X > playground_x0 + playground_width) 
+                || (e.Y < playground_y0 || e.Y > playground_y0 + playground_width) 
+                || game.field[i, j] != 0
+                || game.winned
+            )
             {
                 return;
             }
