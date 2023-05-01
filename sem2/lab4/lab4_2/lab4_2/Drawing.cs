@@ -27,16 +27,6 @@ namespace lab4_2
                 float sweepAngle = elemCoef * elem.weight;
                 g.FillPie(elem.brush, x, y, sideSize, sideSize, startAngle, sweepAngle);
                 startAngle += sweepAngle;
-                //g.FillRectangle(elem.brush, rect);
-
-                //float x_string = x0;
-                //float y_string = elem.height <= 0 ? y0 + height : y0 - 20;
-                //Font font = new Font("Arial", 7);
-                //Brush brush = new SolidBrush(Color.Black);
-                //RectangleF drawRect = new RectangleF(x_string, y_string, width, 20);
-                //StringFormat drawFormat = new StringFormat();
-                //drawFormat.Alignment = StringAlignment.Center;
-                //g.DrawString(elem.height.ToString(), font, brush, drawRect, drawFormat);
             }
         }
     }
